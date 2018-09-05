@@ -1,0 +1,13 @@
+.Container {
+  margin: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+.Title {
+  padding: 10px;
+}
+
+.Hero-List {
+  padding: 10px;
+}
