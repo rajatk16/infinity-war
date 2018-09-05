@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
-import './style.css';
 import data from '../Data';
 import Column from '../Column';
+import styled from 'styled-components';
+
+const Title = styled.div`
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+`;
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = data;
-  }
+  this.state = data;
   render() {
     return (
       <div>
-        <div className="Title">  
+        <Title>  
           <text>Avengers Infinity War</text>
-        </div>
+        <Title>
           {this.state.columnsort.map(columnId => {
             const column = this.state.columns[columnId];
             const heroes = column.heroId.map(heroId => this.state.heroes[heroId]);
